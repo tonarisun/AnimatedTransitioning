@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GreenViewController: UIViewController {
+class GreenViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +26,11 @@ class GreenViewController: UIViewController {
     @objc func tap(sender: UIButton) {
         dismiss(animated: true)
     }
-    
+//
+//    @objc func swipeToClose(recognizer: UISwipeGestureRecognizer) {
+//        dismiss(animated: true)
+//        let newVC = PurpleViewController()
+//        newVC.transitioningDelegate = self
+//        present(newVC, animated: true)
+//    }
 }

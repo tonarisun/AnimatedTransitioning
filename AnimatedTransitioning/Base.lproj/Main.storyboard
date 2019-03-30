@@ -40,11 +40,90 @@
                         <segue destination="2Ic-VT-TTl" kind="relationship" relationship="viewControllers" id="9nw-Sb-PKk"/>
                         <segue destination="W8S-bw-9QT" kind="relationship" relationship="viewControllers" id="x63-o2-hgc"/>
                         <segue destination="7BV-fe-Hcu" kind="relationship" relationship="viewControllers" id="MaJ-cF-4Ck"/>
+                        <segue destination="Fwu-z3-ciU" kind="relationship" relationship="viewControllers" id="EkD-6l-6Xg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuq-YG-YMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1247" y="-33"/>
+        </scene>
+        <!--white-->
+        <scene sceneID="KEy-z3-j5D">
+            <objects>
+                <viewController id="Fwu-z3-ciU" customClass="WhiteViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKD-Dr-FlO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZf-M3-9jp">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6zx-b3-Ona"/>
+                                    <constraint firstAttribute="width" constant="50" id="voB-Nu-buM"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showBigPhoto:" destination="Fwu-z3-ciU" eventType="touchUpInside" id="dJQ-v0-JJ9"/>
+                                    <segue destination="6MK-qL-rFv" kind="custom" customClass="ShowBigPicSegue" customModule="AnimatedTransitioning" customModuleProvider="target" id="09M-tM-Pu8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diamond-Peak-Sunset-By-Robert-Bynum-iPad-Pro-Wallpaper-2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="dWG-Nu-Txk">
+                                <rect key="frame" x="162.5" y="308.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="CfV-Qd-OEK"/>
+                                    <constraint firstAttribute="width" constant="50" id="duB-TX-ZyV"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UZf-M3-9jp" firstAttribute="centerX" secondItem="SKD-Dr-FlO" secondAttribute="centerX" id="P7i-Sw-JuM"/>
+                            <constraint firstItem="dWG-Nu-Txk" firstAttribute="centerX" secondItem="SKD-Dr-FlO" secondAttribute="centerX" id="TwR-rN-at2"/>
+                            <constraint firstItem="dWG-Nu-Txk" firstAttribute="centerY" secondItem="SKD-Dr-FlO" secondAttribute="centerY" id="mHE-Gk-XPz"/>
+                            <constraint firstItem="UZf-M3-9jp" firstAttribute="centerY" secondItem="SKD-Dr-FlO" secondAttribute="centerY" id="ugP-Uf-xWx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="c5U-sw-i6E"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="white" id="nRo-Zn-64p"/>
+                    <connections>
+                        <outlet property="littleImageView" destination="dWG-Nu-Txk" id="8rb-cj-GFZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSL-1j-eU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="-725"/>
+        </scene>
+        <!--Black View Controller-->
+        <scene sceneID="XTX-jf-tnI">
+            <objects>
+                <viewController id="6MK-qL-rFv" customClass="BlackViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lp5-Uj-xV8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Diamond-Peak-Sunset-By-Robert-Bynum-iPad-Pro-Wallpaper-2732x2732" translatesAutoresizingMaskIntoConstraints="NO" id="RDi-jr-iB4">
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RDi-jr-iB4" secondAttribute="height" multiplier="1:1" id="rkV-kY-3kh"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RDi-jr-iB4" firstAttribute="leading" secondItem="evt-sb-mfq" secondAttribute="leading" id="UKf-Xw-Ov1"/>
+                            <constraint firstItem="RDi-jr-iB4" firstAttribute="centerX" secondItem="Lp5-Uj-xV8" secondAttribute="centerX" id="ZJO-Lr-PLV"/>
+                            <constraint firstItem="evt-sb-mfq" firstAttribute="trailing" secondItem="RDi-jr-iB4" secondAttribute="trailing" id="nPi-my-Gdn"/>
+                            <constraint firstItem="RDi-jr-iB4" firstAttribute="centerY" secondItem="Lp5-Uj-xV8" secondAttribute="centerY" id="oWf-re-etl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="evt-sb-mfq"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigImageView" destination="RDi-jr-iB4" id="Iyy-8R-Dqb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chW-fE-rlh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-725"/>
         </scene>
         <!--purple-->
         <scene sceneID="6ey-V1-5BF">
@@ -155,9 +234,6 @@
                         <viewLayoutGuide key="safeArea" id="EYR-SM-BNP"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="blue segue" id="wMp-r7-7sL"/>
-                    <connections>
-                        <outlet property="previousButton" destination="B1Y-MV-uPs" id="5N6-JM-rCM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uiw-MO-zAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,7 +267,10 @@
             <point key="canvasLocation" x="1034" y="-34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Diamond-Peak-Sunset-By-Robert-Bynum-iPad-Pro-Wallpaper-2732x2732" width="1366" height="1366"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="MaJ-cF-4Ck"/>
+        <segue reference="hUr-Hd-z2o"/>
     </inferredMetricsTieBreakers>
 </document>

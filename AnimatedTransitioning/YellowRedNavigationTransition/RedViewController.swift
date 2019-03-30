@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RedViewController: UIViewController {
+class RedViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()

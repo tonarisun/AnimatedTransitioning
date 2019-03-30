@@ -13,6 +13,14 @@
 		D64FCEBC224DE95900D76A9A /* ShowOrangeVCSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCEBB224DE95900D76A9A /* ShowOrangeVCSegue.swift */; };
 		D64FCEBE224DEBB900D76A9A /* ShowBlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCEBD224DEBB900D76A9A /* ShowBlueVC.swift */; };
 		D64FCEC0224DFACF00D76A9A /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCEBF224DFACF00D76A9A /* NavigationViewController.swift */; };
+		D64FCEC7224F392200D76A9A /* WhiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCEC6224F392200D76A9A /* WhiteViewController.swift */; };
+		D64FCEC9224F396700D76A9A /* BlackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCEC8224F396700D76A9A /* BlackViewController.swift */; };
+		D64FCECB224F3B2500D76A9A /* ShowBigPicSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCECA224F3B2500D76A9A /* ShowBigPicSegue.swift */; };
+		D64FCECE224F4CC100D76A9A /* TransitionForward.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCECD224F4CC100D76A9A /* TransitionForward.swift */; };
+		D64FCED0224F4D0C00D76A9A /* TransitionBackwards.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCECF224F4D0C00D76A9A /* TransitionBackwards.swift */; };
+		D64FCED2224F4D4B00D76A9A /* CustomPushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCED1224F4D4B00D76A9A /* CustomPushAnimator.swift */; };
+		D64FCED4224F4D8500D76A9A /* CustomPopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCED3224F4D8500D76A9A /* CustomPopAnimator.swift */; };
+		D64FCED6224F4DC400D76A9A /* TransitionSwipeDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64FCED5224F4DC400D76A9A /* TransitionSwipeDown.swift */; };
 		D6ECC2F6224C6D9E00A920A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ECC2F5224C6D9E00A920A0 /* AppDelegate.swift */; };
 		D6ECC2F8224C6D9E00A920A0 /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ECC2F7224C6D9E00A920A0 /* PurpleViewController.swift */; };
 		D6ECC2FB224C6D9E00A920A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ECC2F9224C6D9E00A920A0 /* Main.storyboard */; };
@@ -20,7 +28,6 @@
 		D6ECC300224C6DA600A920A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6ECC2FF224C6DA600A920A0 /* Assets.xcassets */; };
 		D6ECC303224C6DA600A920A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6ECC301224C6DA600A920A0 /* LaunchScreen.storyboard */; };
 		D6ECC30B224C75FF00A920A0 /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ECC30A224C75FF00A920A0 /* BlueViewController.swift */; };
-		D6ECC311224C88EC00A920A0 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ECC310224C88EC00A920A0 /* TransitionManager.swift */; };
 		D6ECC313224CA4C900A920A0 /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6ECC312224CA4C900A920A0 /* GreenViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +38,14 @@
 		D64FCEBB224DE95900D76A9A /* ShowOrangeVCSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowOrangeVCSegue.swift; sourceTree = "<group>"; };
 		D64FCEBD224DEBB900D76A9A /* ShowBlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBlueVC.swift; sourceTree = "<group>"; };
 		D64FCEBF224DFACF00D76A9A /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		D64FCEC6224F392200D76A9A /* WhiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteViewController.swift; sourceTree = "<group>"; };
+		D64FCEC8224F396700D76A9A /* BlackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackViewController.swift; sourceTree = "<group>"; };
+		D64FCECA224F3B2500D76A9A /* ShowBigPicSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBigPicSegue.swift; sourceTree = "<group>"; };
+		D64FCECD224F4CC100D76A9A /* TransitionForward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionForward.swift; sourceTree = "<group>"; };
+		D64FCECF224F4D0C00D76A9A /* TransitionBackwards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionBackwards.swift; sourceTree = "<group>"; };
+		D64FCED1224F4D4B00D76A9A /* CustomPushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushAnimator.swift; sourceTree = "<group>"; };
+		D64FCED3224F4D8500D76A9A /* CustomPopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPopAnimator.swift; sourceTree = "<group>"; };
+		D64FCED5224F4DC400D76A9A /* TransitionSwipeDown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSwipeDown.swift; sourceTree = "<group>"; };
 		D6ECC2F2224C6D9E00A920A0 /* AnimatedTransitioning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedTransitioning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6ECC2F5224C6D9E00A920A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6ECC2F7224C6D9E00A920A0 /* PurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +55,6 @@
 		D6ECC302224C6DA600A920A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6ECC304224C6DA600A920A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6ECC30A224C75FF00A920A0 /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
-		D6ECC310224C88EC00A920A0 /* TransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		D6ECC312224CA4C900A920A0 /* GreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,6 +83,7 @@
 			children = (
 				D64FCEBB224DE95900D76A9A /* ShowOrangeVCSegue.swift */,
 				D64FCEBD224DEBB900D76A9A /* ShowBlueVC.swift */,
+				D64FCECA224F3B2500D76A9A /* ShowBigPicSegue.swift */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -86,10 +101,23 @@
 		D64FCEC5224E31A300D76A9A /* Animators */ = {
 			isa = PBXGroup;
 			children = (
-				D6ECC310224C88EC00A920A0 /* TransitionManager.swift */,
 				D62BDA80224DC80F00E724A4 /* InteractiveTransitionManager.swift */,
+				D64FCECD224F4CC100D76A9A /* TransitionForward.swift */,
+				D64FCECF224F4D0C00D76A9A /* TransitionBackwards.swift */,
+				D64FCED1224F4D4B00D76A9A /* CustomPushAnimator.swift */,
+				D64FCED3224F4D8500D76A9A /* CustomPopAnimator.swift */,
+				D64FCED5224F4DC400D76A9A /* TransitionSwipeDown.swift */,
 			);
 			path = Animators;
+			sourceTree = "<group>";
+		};
+		D64FCED7224F503F00D76A9A /* WhiteBlackTransition */ = {
+			isa = PBXGroup;
+			children = (
+				D64FCEC6224F392200D76A9A /* WhiteViewController.swift */,
+				D64FCEC8224F396700D76A9A /* BlackViewController.swift */,
+			);
+			path = WhiteBlackTransition;
 			sourceTree = "<group>";
 		};
 		D6ECC2E9224C6D9D00A920A0 = {
@@ -111,17 +139,18 @@
 		D6ECC2F4224C6D9E00A920A0 /* AnimatedTransitioning */ = {
 			isa = PBXGroup;
 			children = (
+				D6ECC2F9224C6D9E00A920A0 /* Main.storyboard */,
+				D6ECC30A224C75FF00A920A0 /* BlueViewController.swift */,
+				D64FCED7224F503F00D76A9A /* WhiteBlackTransition */,
 				D64FCEC5224E31A300D76A9A /* Animators */,
 				D64FCEC4224E317900D76A9A /* YellowRedNavigationTransition */,
 				D64FCEC2224E315A00D76A9A /* Segues */,
 				D64FCEC1224E311C00D76A9A /* PutpleGreenAnimationTransition */,
 				D6ECC2F5224C6D9E00A920A0 /* AppDelegate.swift */,
-				D6ECC2F9224C6D9E00A920A0 /* Main.storyboard */,
 				D6ECC2FF224C6DA600A920A0 /* Assets.xcassets */,
 				D6ECC301224C6DA600A920A0 /* LaunchScreen.storyboard */,
 				D6ECC304224C6DA600A920A0 /* Info.plist */,
 				D6ECC2FC224C6D9E00A920A0 /* AnimatedTransitioning.xcdatamodeld */,
-				D6ECC30A224C75FF00A920A0 /* BlueViewController.swift */,
 			);
 			path = AnimatedTransitioning;
 			sourceTree = "<group>";
@@ -199,14 +228,21 @@
 			files = (
 				D64FCEC0224DFACF00D76A9A /* NavigationViewController.swift in Sources */,
 				D6ECC313224CA4C900A920A0 /* GreenViewController.swift in Sources */,
-				D6ECC311224C88EC00A920A0 /* TransitionManager.swift in Sources */,
+				D64FCECE224F4CC100D76A9A /* TransitionForward.swift in Sources */,
+				D64FCED6224F4DC400D76A9A /* TransitionSwipeDown.swift in Sources */,
+				D64FCED4224F4D8500D76A9A /* CustomPopAnimator.swift in Sources */,
+				D64FCEC7224F392200D76A9A /* WhiteViewController.swift in Sources */,
 				D6ECC2F8224C6D9E00A920A0 /* PurpleViewController.swift in Sources */,
+				D64FCECB224F3B2500D76A9A /* ShowBigPicSegue.swift in Sources */,
 				D64FCEBE224DEBB900D76A9A /* ShowBlueVC.swift in Sources */,
 				D62BDA7D224DC0A800E724A4 /* YellowViewController.swift in Sources */,
+				D64FCED2224F4D4B00D76A9A /* CustomPushAnimator.swift in Sources */,
 				D62BDA7F224DC0BC00E724A4 /* RedViewController.swift in Sources */,
 				D6ECC2F6224C6D9E00A920A0 /* AppDelegate.swift in Sources */,
 				D6ECC30B224C75FF00A920A0 /* BlueViewController.swift in Sources */,
+				D64FCEC9224F396700D76A9A /* BlackViewController.swift in Sources */,
 				D64FCEBC224DE95900D76A9A /* ShowOrangeVCSegue.swift in Sources */,
+				D64FCED0224F4D0C00D76A9A /* TransitionBackwards.swift in Sources */,
 				D6ECC2FE224C6D9E00A920A0 /* AnimatedTransitioning.xcdatamodeld in Sources */,
 				D62BDA81224DC80F00E724A4 /* InteractiveTransitionManager.swift in Sources */,
 			);
