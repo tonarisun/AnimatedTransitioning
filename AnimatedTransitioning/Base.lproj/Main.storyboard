@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V8U-Et-gsR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--yellow Interactive-->
+        <scene sceneID="jfU-wn-3Z7">
+            <objects>
+                <navigationController id="W8S-bw-9QT" customClass="NavigationViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="yellow Interactive" id="zq1-B8-YK6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8fK-jv-wLf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9dh-Dn-MmZ" kind="relationship" relationship="rootViewController" id="jm6-oe-acK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w79-pJ-XDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1247" y="683"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="drX-YE-ffS">
+            <objects>
+                <tabBarController id="V8U-Et-gsR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="M4p-qK-sLh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="2Ic-VT-TTl" kind="relationship" relationship="viewControllers" id="9nw-Sb-PKk"/>
+                        <segue destination="W8S-bw-9QT" kind="relationship" relationship="viewControllers" id="x63-o2-hgc"/>
+                        <segue destination="7BV-fe-Hcu" kind="relationship" relationship="viewControllers" id="MaJ-cF-4Ck"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wuq-YG-YMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1247" y="-33"/>
+        </scene>
+        <!--purple-->
+        <scene sceneID="6ey-V1-5BF">
+            <objects>
+                <viewController id="2Ic-VT-TTl" customClass="PurpleViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hsk-xY-tCR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIG-y4-4Zc">
+                                <rect key="frame" x="168" y="318.5" width="39" height="30"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeControllerButton:" destination="2Ic-VT-TTl" eventType="touchUpInside" id="udu-rf-2z4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69499738239999997" green="0.56460452579999998" blue="0.78689137620000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EIG-y4-4Zc" firstAttribute="centerX" secondItem="hsk-xY-tCR" secondAttribute="centerX" id="Pdu-sQ-FRM"/>
+                            <constraint firstItem="EIG-y4-4Zc" firstAttribute="centerY" secondItem="hsk-xY-tCR" secondAttribute="centerY" id="cfs-Dc-LK9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hh7-uq-qtB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="purple" id="vfH-AF-bAO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbf-jo-JEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="-32"/>
+        </scene>
+        <!--yellow-->
+        <scene sceneID="WxK-ND-pe7">
+            <objects>
+                <viewController id="9dh-Dn-MmZ" customClass="YellowViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bKM-gH-OBA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myK-FJ-uP1">
+                                <rect key="frame" x="137.5" y="318.5" width="100" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Q9f-yi-p6p"/>
+                                    <constraint firstAttribute="height" constant="30" id="QZd-hx-2P3"/>
+                                </constraints>
+                                <state key="normal" title="to red VC">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="lKP-QR-yZZ" kind="show" id="MDI-Rd-ihD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="myK-FJ-uP1" firstAttribute="centerX" secondItem="bKM-gH-OBA" secondAttribute="centerX" id="3ro-hn-wln"/>
+                            <constraint firstItem="myK-FJ-uP1" firstAttribute="centerY" secondItem="bKM-gH-OBA" secondAttribute="centerY" id="6oa-3T-kgy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1dh-Yg-cZa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="yellow" id="w58-UB-MHj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tra-5I-sWo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460" y="684"/>
+        </scene>
+        <!--Red View Controller-->
+        <scene sceneID="3tH-fl-Uya">
+            <objects>
+                <viewController id="lKP-QR-yZZ" customClass="RedViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2R2-Bn-pyS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="wXN-73-fIy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8GA-Ma-f1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="684"/>
+        </scene>
+        <!--blue segue-->
+        <scene sceneID="cVu-X0-sgH">
+            <objects>
+                <viewController id="7BV-fe-Hcu" customClass="BlueViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QZn-Hv-R98">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1Y-MV-uPs">
+                                <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
+                                <state key="normal" title="&gt;&gt;&gt;&gt;&gt;">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rfp-GK-9mW" kind="custom" customClass="ShowOrangeVCSegue" customModule="AnimatedTransitioning" customModuleProvider="target" id="E4n-gV-lbF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="B1Y-MV-uPs" firstAttribute="centerY" secondItem="QZn-Hv-R98" secondAttribute="centerY" id="c0Y-s3-dow"/>
+                            <constraint firstItem="B1Y-MV-uPs" firstAttribute="centerX" secondItem="QZn-Hv-R98" secondAttribute="centerX" id="nzZ-eP-CyL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EYR-SM-BNP"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="blue segue" id="wMp-r7-7sL"/>
+                    <connections>
+                        <outlet property="previousButton" destination="B1Y-MV-uPs" id="5N6-JM-rCM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiw-MO-zAB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-33"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="1ks-HW-jwx">
+            <objects>
+                <viewController id="rfp-GK-9mW" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2KX-PY-rXX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11x-8u-w3i">
+                                <rect key="frame" x="163" y="318" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="&lt;&lt;&lt;&lt;&lt;">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7BV-fe-Hcu" kind="custom" customClass="ShowBlueVC" customModule="AnimatedTransitioning" customModuleProvider="target" id="hUr-Hd-z2o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="1He-70-LIR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9R-fd-t9y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="-34"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="MaJ-cF-4Ck"/>
+    </inferredMetricsTieBreakers>
+</document>
