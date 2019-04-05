@@ -14,6 +14,7 @@ class WhiteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = .white
     }
     
     @IBAction func showBigPhoto(_ sender: Any) {

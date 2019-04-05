@@ -40,7 +40,7 @@
                         <segue destination="2Ic-VT-TTl" kind="relationship" relationship="viewControllers" id="9nw-Sb-PKk"/>
                         <segue destination="W8S-bw-9QT" kind="relationship" relationship="viewControllers" id="x63-o2-hgc"/>
                         <segue destination="7BV-fe-Hcu" kind="relationship" relationship="viewControllers" id="MaJ-cF-4Ck"/>
-                        <segue destination="Fwu-z3-ciU" kind="relationship" relationship="viewControllers" id="EkD-6l-6Xg"/>
+                        <segue destination="Fwu-z3-ciU" kind="relationship" relationship="viewControllers" id="Wkt-Yr-kfr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wuq-YG-YMk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,7 +50,7 @@
         <!--white-->
         <scene sceneID="KEy-z3-j5D">
             <objects>
-                <viewController id="Fwu-z3-ciU" customClass="WhiteViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WhiteViewController" id="Fwu-z3-ciU" customClass="WhiteViewController" customModule="AnimatedTransitioning" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SKD-Dr-FlO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,16 +165,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myK-FJ-uP1">
-                                <rect key="frame" x="137.5" y="318.5" width="100" height="30"/>
+                                <rect key="frame" x="151" y="318.5" width="73" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Q9f-yi-p6p"/>
                                     <constraint firstAttribute="height" constant="30" id="QZd-hx-2P3"/>
                                 </constraints>
-                                <state key="normal" title="to red VC">
+                                <state key="normal" title=" to red VC ">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="lKP-QR-yZZ" kind="show" id="MDI-Rd-ihD"/>
                                 </connections>
@@ -247,9 +251,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11x-8u-w3i">
-                                <rect key="frame" x="163" y="318" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11x-8u-w3i">
+                                <rect key="frame" x="163.5" y="318.5" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XxE-PQ-fAS"/>
+                                </constraints>
                                 <state key="normal" title="&lt;&lt;&lt;&lt;&lt;">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -259,6 +265,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="11x-8u-w3i" firstAttribute="centerY" secondItem="2KX-PY-rXX" secondAttribute="centerY" id="XGf-Ji-euO"/>
+                            <constraint firstItem="11x-8u-w3i" firstAttribute="centerX" secondItem="2KX-PY-rXX" secondAttribute="centerX" id="fDb-vR-6iC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1He-70-LIR"/>
                     </view>
                 </viewController>
@@ -271,6 +281,6 @@
         <image name="Diamond-Peak-Sunset-By-Robert-Bynum-iPad-Pro-Wallpaper-2732x2732" width="1366" height="1366"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hUr-Hd-z2o"/>
+        <segue reference="MaJ-cF-4Ck"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -25,7 +25,11 @@ class BlackViewController: UIViewController, UIViewControllerTransitioningDelega
     }
     
     @objc func swipeToClose(recognizer: UISwipeGestureRecognizer){
-        let newVC = WhiteViewController()
+        let storyboardName = "Main"
+        let storyboard = UIStoryboard(name: storyboardName, bundle: Bundle.main)
+        
+        let identifier = "WhiteViewController"
+        let newVC = storyboard.instantiateViewController(withIdentifier: identifier) as! WhiteViewController
         newVC.transitioningDelegate = self
         present(newVC, animated: true)
     }
